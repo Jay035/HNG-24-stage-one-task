@@ -1,13 +1,11 @@
-
-
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: black;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #535bf2;
+  font-weight: 600;
 }
 
 body {
@@ -16,7 +14,7 @@ body {
   padding: 1rem;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,36 +27,67 @@ nav{
   transition: filter 300ms; */
 }
 
-nav a{
-  background-color: black;
-  color: white;
-  padding: .5rem 1rem;
+nav a {
+  border: 1px solid black;
+  color: black;
+  padding: 0.5rem 1rem;
   border-radius: 30px;
+  text-decoration: none;
 }
 
-main p{
+main {
+  color: #040813;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 3rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+main h1 span {
+  color: #aeb2ba;
+}
+
+main p {
   font-weight: 600;
 }
 
-.date{
+.date {
   margin-top: 3rem;
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   border: 1px solid black;
   border-radius: 30px;
   width: fit-content;
-  margin-inline: auto;
+  font-size: 14px;
+  /* margin-inline: auto; */
 }
 
-.date p{
+.date p {
   margin: 0;
 }
 
+.slackProfilePicture {
+  max-width: 100px;
+  margin-top: 20px;
+}
 
-@media (prefers-color-scheme: light) {
-  
+ul {
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  main h1 {
+    font-size: 3rem;
+  }
 }
