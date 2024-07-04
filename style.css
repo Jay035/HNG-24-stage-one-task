@@ -124,3 +124,39 @@ li > span {
     font-size: 22px;
   }
 }
+
+@media (min-width: 1024px) {
+  main h1 {
+    font-size: 4rem !important;
+    max-width: 50rem;
+  }
+
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  li {
+    gap: 8px;
+  }
+
+  li > span {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  main h1 {
+    font-size: 3rem;
+  }
+
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  li {
+    gap: 8px;
+  }
+
+  li > span {
+    font-size: 22px;
+  }
+}
